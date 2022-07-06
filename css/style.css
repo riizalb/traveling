@@ -3,11 +3,11 @@ nav{
 }
 
 nav img{
-    filter: drop-shadow(1px 1px 1px black);
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .8));
 }
 
 nav ul li a{
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
 }
 
 .brand-logo img{
@@ -24,7 +24,7 @@ nav ul li a{
 
 .caption h3,
 .caption h5{
-    text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, .8);
 }
 
 .about{
@@ -35,6 +35,29 @@ section{
     padding-top: 10px;
 }
 
+.card-image img {
+    height: 210px;
+}
+
 .card-image span{
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+}
+
+.parallax-container{
+    height: 20%;
+}
+
+.parallax img{
+    filter: grayscale(1);
+    opacity: .5 !important;
+}
+
+.sponsor h3{
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+}
+
+.sponsor img{
+    max-width: 150px;
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .8));
+    padding-top: 30px;
 }
