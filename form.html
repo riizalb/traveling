@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<!--Import Google Icon Font-->
+			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+			<!--Import materialize.css-->
+			<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+			<!--Let browser know website is optimized for mobile-->
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+			<!-- My CSS -->
+			<link rel="stylesheet" href="css/styleform.css">
+			<title>Traveling Form</title>
+		</head>
+
+		<body id="home" class="scrollspy">
+			<!-- navbar -->
+			<div class="navbar-fixed">
+				<nav class="indigo darken-4">
+					<div class="nav-wrapper container">
+						<a class="brand-logo"><img src="img/logo.png" alt="logo"></a>
+						<!-- sidenav -->
+						<a href="#" data-target="menu-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+						<ul class="right hide-on-med-and-down">
+							<li><a href="index.html">Home</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<!-- akhir navbar -->
+
+			<!-- sidenav lanjutan -->
+			<ul class="sidenav" id="menu-mobile">
+				<li><a href="index.html">Home</a></li>
+			</ul>
+			<!-- akhir sidenav -->
+
+			<!-- form komentar -->
+			<section class="grey lighten-4">
+				<div class="container">
+					<h5 class="light">Berikan komentar kamu</h5>
+					<div class="row">
+						<form action="#!" class="col m12 s12">
+							<!-- row1 -->
+							<div class="row">
+								<div class="col m5 s12 input-field">
+									<i class="material-icons prefix">account_circle</i>
+									<input type="text" id="nama" placeholder="Nama" class="validate" required>
+									<label for="nama">Nama / Alias</label>
+								</div>
+								<div class="col m5 s12 offset-m1">
+									<span>Jenis kelamin :
+										<p>
+											<label>
+												<input name="group1" type="radio" checked />
+												<span>Pria</span>
+											</label>
+												&emsp; <!-- 4 jarak/spasi -->
+											<label>
+												<input name="group1" type="radio" />
+												<span>Wanita</span>
+											</label>
+										</p>
+									</span>
+								</div>
+							</div>
+							<!-- row2 -->
+							<div class="row">
+								<div class="col m5 s12 input-field">
+									<i class="material-icons prefix">email</i>
+									<input type="email" id="email" placeholder="Email" class="validate" required>
+									<label for="email">Email</label>
+									<span class="helper-text" data-error="wrong" data-success="right"></span>
+								</div>
+								<div class="col m3 s12 offset-m1 input-field">
+									<i class="material-icons prefix">event</i>
+									<input type="text" id="tanggal" placeholder="Tanggal Lahir" class="datepicker">
+									<label for="tanggal">Tanggal</label>
+								</div>
+								<div class="col m3 s12 input-field">
+									<i class="material-icons prefix">phone</i>
+									<input type="text" id="phone" placeholder="+62">
+									<label for="phone">Nomor Hanphone</label>
+								</div>
+							</div>
+							<!-- row3 -->
+							<div class="row">
+								<div class="col m4 s12 input-field">
+									<i class="material-icons prefix">work</i>
+									<select>
+										<option value="" disabled selected>Pilihan</option>
+										<option value="1">Bekerja</option>
+										<option value="2">Tidak Bekerja</option>
+										<option value="3">Pensiunan</option>
+									</select>
+									<label for="">Status Pekerjaan</label>
+								</div>
+								<div class="col m7 s12 offset-m1">
+									<div class="chips">Hobby :
+										<input type="" class="custom-class" placeholder="+tag">
+									</div>
+								</div>
+							</div>
+							<!-- row4 -->
+							<div class="row">
+								<div class="col m8 s12 input-field">
+									<i class="material-icons prefix">textsms</i>
+									<textarea id="komentar" class="materialize-textarea" data-length="100" required></textarea>
+									<label for="komentar">Komentar</label>
+								</div>
+							</div>
+
+							<!-- btn-submit -->
+							<button class="btn waves-effect waves-light modal-trigger" data-target="modalnya">Submit
+								<i class="material-icons right">send</i>
+							</button>
+							<!-- modal -->
+							<div id="modalnya" class="modal">
+								<div class="modal-content">
+									<h5>Terms & Conditions</h5>
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam tempore obcaecati optio consequatur magni consequuntur, cumque dicta maxime temporibus deleniti similique iure incidunt est. Optio delectus explicabo excepturi sequi commodi repellat laudantium tenetur doloribus provident. Labore saepe tempore, voluptatem dolore, inventore, cum repellat quisquam voluptatum modi est laboriosam? Fuga, exercitationem!</p>
+								</div>
+								<div class="modal-footer">
+									<button class="waves-effect  waves-red btn-flat modal-close" type="submit" name="action">Disagree</button>
+									<button class="waves-effect  waves-red btn-flat modal-close" type="submit" name="action">Agree</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<!-- akhir form -->
+
+			<!-- footer -->
+			<footer class="page-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col m6 s12">
+							<div class="row">
+								<div class="col m6 s6 offset-m3 offset-s3">
+									<img src="img/logo.png" alt="logo" class="responsive-img">
+								</div>
+							</div>
+							<p class="center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore odit laborum, hic exercitationem dolorum nam, iste non quia assumenda neque voluptatum! Maxime minus voluptatibus temporibus velit ab quas ex eius.</p>
+						</div>
+						<div class="col m3 s12 offset-m3">
+							<h5>Media Link</h5>
+							<ul>
+								<li><a href="https://gmail.google.com">Email</a></li>
+								<li><a href="https://www.whatsapp.com/">Whatsapp</a></li>
+								<li><a href="https://www.youtube.com/">Youtube</a></li>
+								<li><a href="https://www.google.com/maps">Maps</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer-copyright">
+					<div class="container">
+					© 2014 Copyright | By Rizal Bachtiar
+					<a class="grey-text text-lighten-4 right" href="#home">Top</a>
+					</div>
+				</div>
+			</footer>
+			<!-- akhir footer -->
+
+			<!--JavaScript at end of body for optimized loading-->
+			<script type="text/javascript" src="js/materialize.min.js"></script>
+
+			<!-- My Javascript -->
+			<script>
+				// sidenav
+				const mySidenav = document.querySelectorAll('.sidenav');
+				M.Sidenav.init(mySidenav);
+
+				// tanggal
+				const myDate = document.querySelectorAll('.datepicker');
+				M.Datepicker.init(myDate, {
+					format: 'dd mmm yyyy'
+				});
+
+				// select
+				const mySelect = document.querySelectorAll('select');
+				M.FormSelect.init(mySelect);
+
+				// chips
+				const myChips = document.querySelectorAll('.chips');
+				M.Chips.init(myChips);
+
+				// modal
+				const myModal = document.querySelectorAll('.modal');
+				M.Modal.init(myModal);
+
+				const myScroll = document.querySelectorAll('.scrollspy');
+				M.ScrollSpy.init(myScroll,{
+					scrollOffset: 65
+				});
+			</script>
+		</body>
+	</html>

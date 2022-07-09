@@ -1,0 +1,23 @@
+nav img{
+	filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .8));
+}
+
+.brand-logo img{
+	height: 60px;
+}
+
+section{
+	padding: 5px 5px;
+}
+
+section h5{
+	padding-bottom: 20px;
+}
+
+footer{
+	background-color: rgb(9, 20, 38) !important;
+}
+
+footer .footer-copyright{
+	border-top: 2px solid rgb(17, 36, 67);
+}
